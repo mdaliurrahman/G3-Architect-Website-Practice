@@ -13,7 +13,9 @@
 .display-flex{
   display: flex;
 }
-
+.text-primary{
+  color: #FF900E;
+}
 .btn-primary{
   background-color: #FF900E;
   color:#FFFFFF ;
@@ -22,6 +24,15 @@
   font-weight: 600;
   border-radius: 8px;
   border: none;
+}
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section{
+  margin-top: 130px;
 }
 
 /* dark02 */
@@ -78,12 +89,141 @@
 }
 .banner-image{
   width: 100%;
+  margin: 50px auto;
+  padding-left: 30px;
 }
+
+
+
+/* teams and feature related styles */
+.teams{
+  align-items: center;
+
+}
+
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features{
+  margin-left: 130px;
+  max-width: 530px;
+}
+#quick-list{
+  font-weight: 500;
+}
+
+.feature-title{
+  font-size: 2.81rem;
+}
+
+.love-container{
+  display: flex;
+  gap: 54px;
+}
+
+.love-card-container{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+.love-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+
+.fact-card-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.fact-card{
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.number{
+  font-size: 2.81rem;
+  font-weight: 600;
+  color: #424242;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-description{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #727272;
+  margin-top: 10px;
+}
+
+.sponsor{
+  width: 542px;
+  height: 129px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.our-sponsors{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  filter: grayscale(100%);
+  margin-left: 50px;
+  margin-bottom: 130px;
+ 
+}
+
+.footer-container{
+  width: 1440px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: #FFF4E7;
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+.footer-text{
+  margin: 30 auto;
+  font-size: 1.25rem;
+  font-weight: 400;
+ 
+}
+
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links{
+  .navbar, 
+  .nav-links,
+  .teams{
     flex-direction: column;
   }
+
+  .team-img-container{
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
   
+}
 }
