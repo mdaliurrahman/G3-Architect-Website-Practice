@@ -88,7 +88,7 @@ main > section{
  font-size: 4rem;
 }
 .banner-image{
-  width: 100%;
+ max-width: 100%;
   margin: 50px auto;
   padding-left: 30px;
 }
@@ -125,7 +125,7 @@ main > section{
 }
 .love-image{
   width: 100%;
-  height: auto;
+  
 }
 .love-card-container{
   padding: 30px;
@@ -249,7 +249,10 @@ padding-right: 50px;
     text-align: center;
   }
   #experience-badge{
-    display: none;
+    margin-top: 20px;
+    margin-left: 20px;
   }
+
+  
 }
 
