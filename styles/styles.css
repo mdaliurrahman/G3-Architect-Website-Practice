@@ -123,7 +123,10 @@ main > section{
   display: flex;
   gap: 54px;
 }
-
+.love-image{
+  width: 100%;
+  height: auto;
+}
 .love-card-container{
   padding: 30px;
   border-radius: 8px;
@@ -192,8 +195,8 @@ padding-right: 50px;
 }
 
 .sponsor{
-  width: 542px;
-  height: 129px;
+  max-width: 542px;
+  max-height: 129px;
   text-align: center;
   margin: 0 auto;
 }
@@ -229,13 +232,24 @@ padding-right: 50px;
 @media screen and (max-width: 576px) {
   .navbar, 
   .nav-links,
-  .teams{
+  .teams,
+  .love-container{
     flex-direction: column;
   }
 
-  .team-img-container{
-  align-items: center;
-  grid-template-columns: repeat(1, 1fr);
-  
+  .fact-card-container, .team-img-container, .our-sponsors{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .some-facts, .sponsor{
+    text-align: center;
+  }
+  .footer-container{
+    max-width: 100%;
+    text-align: center;
+  }
+  #experience-badge{
+    display: none;
+  }
 }
-}
+
